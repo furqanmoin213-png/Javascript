@@ -1,0 +1,13 @@
+let str1 = "rehan moin ud din";
+let str2 = str1.split(" ");
+console.log(str2);
+let str3 = Array.from(str2, x => x.charAt(0).toUpperCase() + x.slice(1));
+console.log(str3, typeof str3);
+let str4 = Object.values(str3).join(" ");
+console.log(str4, typeof str4);
+let str5 = str4.toString();
+console.log(str5, typeof str5);
+let str6 = String(str5);
+console.log(str6, typeof str6);
+let str7 = Object.assign([], str2).map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(" ");
+console.log(str7, typeof str7);
