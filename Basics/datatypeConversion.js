@@ -22,3 +22,5 @@ console.log(bool)
 
 bool = Boolean(str2);
 console.log(bool)
+
+
