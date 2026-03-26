@@ -52,4 +52,6 @@ function reverseString(str) {
     
     return str.split("").reverse().join("");
 }
-console.log(reverseString("Furqan Moin"))
+str= new String("Furqan")
+console.log(str.split("").reverse().join(""));
+
