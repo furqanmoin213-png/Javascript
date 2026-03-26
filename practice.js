@@ -31,7 +31,7 @@ console.log(9 - "8")
 console.log("7" - 8)
 console.log([]+[])
 console.log({} + [])
-console.log([]+{})
+console.log(+[]+{})
 console.log(+[])
 console.log(+{})
 console.log("" == 0)
@@ -44,3 +44,9 @@ console.log(undefined + {} + [])
 console.log(![] + {})
 console.log({} + ![])
 console.log(NaN == 0)
+console.log([] == false)
+console.log([] +[])
+console.log([][0])
+console.log([]["length"]);
+console.log([1,2,3]["length"]);
+
