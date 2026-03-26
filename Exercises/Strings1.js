@@ -246,3 +246,9 @@ function swapcase(str)
     return str2;
 }
 console.log(swapcase("Furqan Moin"))
+str1 = "Robin Singh from USA.";
+
+    // Trim leading and trailing whitespace, convert to lowercase, and replace non-alphanumeric characters with an empty string
+    console.log(str1.trim().toLowerCase().replace(/[^a-zA-Z0-9 -]/g, "").replace(/\s/g, "-"));
+    console.log("Furqan Moin".trim().replace(/[^a-zA-Z0-9 -@]/))
+
