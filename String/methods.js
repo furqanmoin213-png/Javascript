@@ -15,7 +15,7 @@ console.log(email.toLowerCase())
 console.log(email.toUpperCase());
 console.log(email.isWellFormed())
 
-let str="hello \uD83D\uDEE world";
+let str="hello  world";
 console.log(str)
 console.log(str.isWellFormed())
 str = str.toWellFormed();
