@@ -13,9 +13,15 @@ function reverseString(str)
     // return element.join(" ").replaceAll("undefined", "");
     return element;
 }
+
+function reverseString2(str)
+{
+    return str.split("").reverse().join("");
+}
 let str = "furqan MOin";
 let str2 = reverseString(str);
 console.log(`${str} reversed is "${str2}"`);
+console.log(reverseString2("Hello Furqan"))
 
 
 //2
@@ -196,3 +202,7 @@ if(valid !== -1)
 {
     console.log(`Character found at index: ${valid}`);
 }
+let size = "44";
+
+      size = ~~size;
+console.log(size)
