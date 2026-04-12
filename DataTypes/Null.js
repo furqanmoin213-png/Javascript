@@ -18,7 +18,7 @@ console.log(JSON.stringify({ a: null }))
 // '{"a":null}'
 
 function test(x = 10) {
-  return x;
+  return(console.log(x))
 }
 
 test(undefined); // 10

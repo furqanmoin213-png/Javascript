@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create DOM Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input {
+            padding: 10px;
+            width: 500px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+       div button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #container {
+            margin-top: 20px;
+        }
+        #btn{
+            display:none;
+        }
+         #btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+         }
+    </style>
+</head>
+<body>
+    <h1>Create DOM Elements</h1>
+    <div>
+        <input type="text" id="text" placeholder="Enter Text to create paragraph">
+
+        <button onclick="create()">Create Element</button>
+        <button onclick="deleteElement()" id="btn">Delete All Element</button>
+    </div>
+    <div id="container"></div>
+    <div class="test">
+        <h1>Hello</h1>
+    </div>
+    <script>
+        let text = document.getElementById("text");
+        console.log()
+        let test = document.querySelectorAll(".test")
+        console.log(test)
+function create() 
+    {
+            let container = document.getElementById("container")
+        container.innerHTML =``;
+        if(document.getElementById("text").value.trim()==="")
+        {
+            alert("Please enter some text to create a paragraph.")
+            return;
+        }
+
+         document.getElementById("btn").style.display="inline-block"
+        let text = document.getElementById("text");
+        // let container = document.getElementById("container")
+        // let newElement = document.createElement("p");
+        
+        // newElement.style.color="red";
+        // newElement.innerHTML = text.value;
+        // newElement.setAttribute("class", "Para")
+        // container.appendChild(newElement);
+        const para = document.createElement("p");
+        para.innerHTML=text.value;
+        para.style.color="red";
+        para.setAttribute("class", "Para")
+        container.appendChild(para);
+        text.value = "";
+        const btn = document.getElementById("btn")
+        btn.style.display = "inline-block"
+        console.log(text.onkeypress)
+        text.focus()
+    }
+    function deleteElement()
+    {
+let container = document.querySelector("#container")
+
+// var btn = document.getElementById("btn")
+let text= document.getElementById("text")
+const para = document.querySelectorAll(".Para")
+ container = document.querySelector("#container")
+
+para.forEach(element => {
+
+    setTimeout(() => {
+        element.remove()
+        container.innerText = "All Elements are Deleted"
+        container.style.color = "blue"
+        container.style.fontSize = "20px"
+        container.style.fontWeight = "bold"
+        container.style.fontFamily = "Arial"
+        container.style.marginTop = "20px"
+    },1000);
+    setTimeout(() => {
+        container.innerText = ""
+        let btn = document.getElementById("btn")
+        btn.style.display = "none"
+        console.log(para)
+        
+    },2000);
+    text.focus()
+    
+    
+
+}
+
+)}
+    </script>
+</body>
+</html>
