@@ -14,6 +14,12 @@ console.log(null >= 0)
 console.log(null <= 0)//its rather greater than or smaller than equals to 0
 console.log(null > 0)
 console.log(null < 0)
+console.log(typeof null === "object")//this is a bug in js but it is not going to be fixed because of backward compatibility
+console.log(null == null)
+console.log(null == {} , null == [])
+console.log("2" + 55, 3 + 5 - "2")
+console.log("55" - 33, 2+3+"55");
+console.log("55"- "33");
 console.log(JSON.stringify({ a: null })) 
 // '{"a":null}'
 

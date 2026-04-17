@@ -10,4 +10,6 @@ console.log(str5, typeof str5);
 let str6 = String(str5);
 console.log(str6, typeof str6);
 let str7 = Object.assign([], str2).map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(" ");
+let str8 = Object.assign([], str2);
+console.log(str8)
 console.log(str7, typeof str7);

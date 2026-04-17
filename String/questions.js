@@ -4,9 +4,7 @@ function reverseString(str)
 {
     let element ="";
      for (let index = str.length - 1; index >= 0; index--) {
-        element += str[index];
-       
-         
+        element += str[index];         
 
         
     }
@@ -28,6 +26,8 @@ console.log(reverseString2("Hello Furqan"))
 
 // How would you compare two strings to check if they are equal without using .localeCompare()?
 function compareStrings(str1, str2) {
+    if((typeof str1 && typeof str2) !== "string")
+        return false;
     if (str1.length !== str2.length) {
         return false;
     }
@@ -38,7 +38,7 @@ function compareStrings(str1, str2) {
     }
     return true;
 }
-let string = "Furqan Moin";
+let string = "Furqan Moin ";
 let string2 = "Furqan Moin";
 console.log(`${string} and ${string2} are ${compareStrings(string, string2) ? 'equal' : 'not equal'}`);
 

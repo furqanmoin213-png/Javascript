@@ -8,13 +8,17 @@ console.log(typeof Number, typeof String)
 console.log(typeof Number(), typeof String());
 console.log(typeof age1, typeof names)
 
-
 console.log(age.toString().length)
 console.log(pi.toFixed(3))
 console.log(pi.toPrecision(3))
 
-const hundreds = 1000000000;
-console.log(hundreds.toLocaleString())
+const hundred = new Date();
+const hundreds = 10000000000000;
+console.log(hundred.toLocaleString())
+console.log(hundred.toLocaleTimeString())
+console.log(hundred.toLocaleDateString())
+console.log(hundred.toDateString())
+console.log(hundred.toLocaleString())
 
 console.log(age.valueOf())
 console.log(pi.valueOf())
