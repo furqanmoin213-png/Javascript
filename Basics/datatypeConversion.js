@@ -36,11 +36,11 @@ console.log(string)
 
 // String => Array Conversion
 
-let strArray = "Furqan";
+let strArray = "Furqan Moin";
 
 //1st
 
-console.log( strArray.split(""))
+console.log( strArray.split(" "))
 
 //2nd
 
@@ -56,5 +56,12 @@ console.log(...strArray)
 console.log(Array.from(strArray))
 
 //String => Object
+
+const string1 = "Fuqran";
+
+const obj2 = {}
+obj2.name = string1;
+console.log(obj2)
+
 
 

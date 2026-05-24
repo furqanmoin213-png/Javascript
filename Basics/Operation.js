@@ -1,5 +1,5 @@
 "use strict";
-let op = 2**5;
+let op = 2**5;//exponential operator
 console.log(op);
 
 let num1, num2, num3;
